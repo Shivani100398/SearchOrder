@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SearchOrderApplication {
-public static void main(String[] args) {
-	SpringApplication.run(SearchOrderApplication.class, args);
-}
+	public static void main(String[] args) {
+		SpringApplication.run(SearchOrderApplication.class, args);
+	}
 }
