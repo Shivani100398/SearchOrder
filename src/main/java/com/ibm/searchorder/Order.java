@@ -13,18 +13,15 @@ public class Order {
 	private float price;
 	@Id
 	private String id;
+	private String date;
 
-	public String getItem() {
-		return item;
+	public String getId() {
+		return id;
 	}
 
-
-	public void setItem(String item) {
-
-		this.item = item;
+	public void setId(String id) {
+		this.id = id;
 	}
-
-	
 
 	public float getPrice() {
 		return price;
@@ -32,26 +29,16 @@ public class Order {
 
 	public void setPrice(float price) {
 		if (price <= 0) {
-			throw new IllegalArgumentException("Price cannot be Negative");
+			throw new IllegalArgumentException("Price cannot be negative");
 		}
 		this.price = price;
 	}
 
-
-	public String getId() {
-		return id;
+	public String getItem() {
+		return item;
 	}
 
-
-	public void setId(String id) {
-		this.id = id;
+	public void setItem(String item) {
+		this.item = item;
 	}
-
-//	public String getName() {
-//		return name;
-//	}
-//
-//	public void setName(String name) {
-//		this.name = name;
-//	}
 }
